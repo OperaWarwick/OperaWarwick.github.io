@@ -8,11 +8,12 @@
     <link rel="icon" href="./images/opWaLogo.png" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-
   <body>
     <!-- 
         Template formating for an event on the website.
-        Use this every time you mention or describe a new event.     
+        Use this every time you mention or describe a new event.
+        Add events in the script at the bottom of the page so that they are 
+        formated correctly and appear in the right place automatically.  
     -->
     <template id="event-template">
       <li>
@@ -23,17 +24,24 @@
 
     <!-- MAIN CONTENT -->
     <h1>University of Warwick Opera Society (aka. OpWa)</h1>
+
     <h2>Welcome to Opera Warwick</h2>
     <p>
       Hi there, welcome to the University of Warwick opera society webpage! Here
       you'll be able to learn about the society, keep track of our social media
-      and see upcoming events.
+      and see upcoming events. If you want to get into contact you can do so on
+      <a href="https://www.facebook.com/operawarwick">Facebook</a> or by email
+      at <a mailto="su301@warwicksu.com">su301@warwicksu.com</a>. You can also
+      just come an meet us at any of our socials (these will be adevrtised here
+      as well as on Facebook)
     </p>
     <h3>Who are we?</h3>
     <p>
-      What better means of presenting to you "who we are" than to show us in action...
+      What better means of presenting to you "who we are" than to show us in
+      action...
     </p>
     <iframe
+      class="horizontal-center"
       width="780"
       height="439"
       src="https://www.youtube.com/embed/THntSZDyk7I"
@@ -45,12 +53,25 @@
     <h3>What we do?</h3>
     <p>
       At heart we are a place for people with a common love and appreciation for
-      OPera and classical music more broadly to share there passions. We are a
-      social society. But we also provide a platform for young directeors and
-      producers to produce new and exciting forms of Opera.
+      Opera and classical music more broadly to share their passions. We are a
+      social society. But we also provide a platform for young directors and
+      producers to make new and exciting forms of Opera and singers a chance to
+      perform. If you're interested in performing or producing an Opera please
+      come to any of our socials or get into contact with us.
     </p>
-
+    <p>
+      For people that want to put on their own production go to the
+      <a href="#putting_on_a_show">Putting on a show</a> section to find out
+      more.
+    </p>
     <h3>What do we stand for? (i.e. society constitution)</h3>
+    <p>
+      We want to share our passion and love for Opera and bring together like
+      minded people. We want to make Opera accessible and introduce to new a
+      different people. Please see our
+      <a href="./opWaRenewedConstitution.pdf">Constitution</a> for more
+      details...
+    </p>
     <h3>Where can you find us?</h3>
     <ul>
       <li>
@@ -66,23 +87,48 @@
         >
       </li>
     </ul>
+    <p>Here's what we've been up to...</p>
+    <iframe
+      class="horizontal-center"
+      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Foperawarwick%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+      width="500"
+      height="500"
+      style="border: none; overflow: hidden"
+      scrolling="no"
+      frameborder="0"
+      allowfullscreen="true"
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+    ></iframe>
 
+    <!-- 
+      Don't touch this section. Add events in the <script> section at the 
+      bottom of the page.
+    -->
     <h2 id="events">Events (what - when - where)</h2>
     <h3>Regular events</h3>
     <ul id="regular-events"></ul>
     <h3>Spontaneous events</h3>
     <ul id="spontaneous-events"></ul>
 
-    <h2>Young directors</h2>
-    <p>Would you like to directe, produce our next performance... Here is the pack... We support young directors who went to grow they're portofolios and push the boundaries of new and exciting opera.</p>
-
+    <h2 id="putting_on_a_show">Putting on a show</h2>
+    <p>
+      Would you like to direct or produce our next performance? Here is the
+      <a href="./opWaSubmissionsPolicy.pdf">Submissions policy</a>. The policy
+      document contains all the instruction to make a Pack which can then go on
+      to become a production. We support young directors who want to grow their
+      portofolios and push the boundaries of new and exciting Opera. So don't
+      hesitate and give it a go! We'll help along the way :)
+    </p>
 
     <h2>OpWa friends 😊</h2>
     <p>
       Opera society members are active participants in the musical community of
-      the University of Warwick. You can find members as part of Warcick Chamber
-      Choir, Warcick Choir, Brass/Wind orachetsras...
+      the University of Warwick. You can find members as part of Warwick Chamber
+      Choir, Warwick Choir, Warwick Symphony Orchestra, Brass & Wind societies,
+      Musical theatre and many others... Whereever you are they'll be a friendly
+      OpWa face.
     </p>
+
     <h2 id="contribute">Contribute</h2>
     <p>
       This is an open-source website produced under the
@@ -108,8 +154,15 @@
   <script>
     "use strict";
 
+    // ADD NEW REGULAR EVENTS HERE!
+    // Here is where you can add regular events to the page, use the following
+    // format:
+    // {
+    //   what: '<EVENT TITLE>',
+    //   when: '<EVENT DATE & TIME>',
+    //   where: '<EVENT LOCATION>'
+    // },
     const regularEvents = [
-      // { what: '<EVENT TITLE>', when: '<EVENT DATE & TIME>', where: '<EVENT LOCATION>' },
       {
         what: "Tutti (casual social singing)",
         when: "every two weeks on Sunday",
@@ -117,9 +170,17 @@
       },
     ];
 
+    // ADD NEW SPONTANEOUS EVENTS HERE!
+    // Here is where you can add spontaneous events to the page, use the
+    // following format:
+    // {
+    //   what: '<EVENT TITLE>',
+    //   when: '<EVENT DATE & TIME>',
+    //   where: '<EVENT LOCATION>'
+    // }
     const spontaneousEvents = [
       // { what: '<EVENT TITLE>', when: '<EVENT DATE & TIME>', where: '<EVENT LOCATION>' },
-        {
+      {
         what: "Welcome week Event (please book here...)",
         when: "Wednesday ",
         where: "Ensemble room",
@@ -131,6 +192,7 @@
       },
     ];
 
+    // Don't touch this stuff (it's what renders the events)
     function appendEvents(templateId) {
       const regularEventList = document.getElementById("regular-events");
       const spontaneousEventList =
@@ -164,6 +226,7 @@
 
     appendEvents("event-template");
 
+    // Don't touch this stuff (it's what adds the last modified date)
     function setModifiedDate() {
       if (document.getElementById("last-modified")) {
         fetch(
