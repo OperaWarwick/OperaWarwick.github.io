@@ -1,5 +1,7 @@
 # University of Warwick Opera Society - Website
 
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 This is the repository for the website of the University of Warwick Opera Society. The page can be viewed at https://operawarwick.github.io/.
 
 The website is hosted (for free :sunglasses:) on GitHub pages.
