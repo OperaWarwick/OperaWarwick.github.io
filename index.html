@@ -1,169 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Opera Warwick</title>
-    <link rel="icon" href="./images/opWaLogo.png" />
-    <link rel="stylesheet" href="./styles/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opera Warwick</title>
+  <link rel="icon" href="./images/opWaLogo.png" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI"}
+  body {font-family: "Arial"}
+  </style>
+</head>
+<body class="light-grey-bg">
 
-    <!-- https://www.w3schools.com/w3css/w3css_templates.asp -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
-    <style>
-    h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-    body {font-family: "Open Sans"}
-    </style>
-  </head>
-  <body class="w3-light-grey">
-
-  <div class="w3-bar w3-black w3-hide-small">
-  <a href="https://www.facebook.com/operawarwick" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
-  <a href="https://www.instagram.com/operawarwick/?hl=en" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
-  <a href="https://www.youtube.com/channel/UCrWmnc1-5iJxZZXjgaX-IgQ" class="w3-bar-item w3-button"><i class="fa fa-youtube"></i></a>
-  <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a> -->
-  <a href="https://twitter.com/operawarwick" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
-  <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a> -->
-  <!-- <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a> -->
+  <div class="top-bar">
+    <a href="https://www.facebook.com/operawarwick" class="top-bar-item"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/operawarwick/?hl=en" class="top-bar-item"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.youtube.com/channel/UCrWmnc1-5iJxZZXjgaX-IgQ" class="top-bar-item"><i class="fa fa-youtube"></i></a>
+    <a href="https://twitter.com/operawarwick" class="top-bar-item"><i class="fa fa-twitter"></i></a>
   </div>
 
-    <!--
-      Template formating for an event on the website.
-      Use this every time you mention or describe a new event.
-      Add events in the script at the bottom of the page so that they are
-      formated correctly and appear in the right place automatically.
-    -->
-    <template id="event-template">
-      <li>
-        <span class="what" style="font-weight: bold"></span> -
-        <span class="when"></span> - <span class="where"></span>
-      </li>
-    </template>
+<!--
+  Template formating for an event on the website.
+  Use this every time you mention or describe a new event.
+  Add events in the script at the bottom of the page so that they are
+  formated correctly and appear in the right place automatically.
+-->
+<template id="event-template">
+  <li>
+    <span class="what" style="font-weight: bold"></span> -
+    <span class="when"></span> - <span class="where"></span>
+  </li>
+</template>
 
-    <!-- MAIN CONTENT -->
-    <div class="w3-content">
+<!-- MAIN CONTENT -->
+<div class="main-content">
 
-    <br>
+  <!-- UNIVERSITY OF OPERA SOCIETY -->
+  <header class="page-box">
+    <h1 class="large-text"><b>University of Warwick Opera Society (aka. OpWa)</b></h1>
+  </header>
+  <!-- =========================== -->
 
-    <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxxlarge"><b>University of Warwick Opera Society (aka. OpWa)</b></h1>
-    </header>
 
-    <br>
 
-    <div class="w3-center w3-padding-48 w3-white">
+  <!-- WELCOME TO OPERA WARWICK -->
+  <div class="page-box">
     <h2>Welcome to Opera Warwick</h2>
-    <div class="w3-container center">
-    <p>
-      Hi there, welcome to the University of Warwick opera society webpage! Here
-      you'll be able to learn about the society, keep track of our social media
-      and see upcoming events. If you want to get in contact you can do so on
-      <a href="https://www.facebook.com/operawarwick">Facebook</a> or by email
-      at <a href="mailto:su301@warwicksu.com">su301@warwicksu.com</a>. You can
-      also just come an meet us at any of our socials (these will be advertised
-      here as well as on Facebook)
-    </p>
+    <div class="center">
+      <p>
+        Hi there, welcome to the University of Warwick opera society webpage! Here
+        you'll be able to learn about the society, keep track of our social media
+        and see upcoming events. If you want to get in contact you can do so on
+        <a href="https://www.facebook.com/operawarwick">Facebook</a> or by email
+        at <a href="mailto:su301@warwicksu.com">su301@warwicksu.com</a>. You can
+        also just come an meet us at any of our socials (these will be advertised
+        here as well as on Facebook)
+      </p>
     </div>
-    </div>
+  </div>
+  <!-- ======================== -->
 
-    <br>
 
-    <div class="w3-center w3-padding-48 w3-white">
 
+  <!-- WHO ARE WE? -->
+  <div class="page-box">
     <h3>Who are we?</h3>
-
-    <div class="w3-container">
-    <p>
-      What better means of presenting to you "who we are" than to show us in
-      action...
-    </p>
-    <iframe
+    <div class="center">
+      <p>
+        What better means of presenting to you "who we are" than to show us in
+        action...
+      </p>
+      <iframe
       class="horizontal-center styled-iframe"
       src="https://www.youtube.com/embed/THntSZDyk7I"
       title="YouTube video player"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
-    ></iframe>
+      ></iframe>
     </div>
-    </div>
+  </div>
+  <!-- =========== -->
 
-    <br>
 
-    <div class="w3-center w3-padding-48 w3-white">
+
+  <!-- WHAT DO WE DO? -->
+  <div class="page-box">
     <h3>What we do?</h3>
-
-    <div class="w3-container center">
-
-    <p>
-      At heart we are a place for people with a common love and appreciation for
-      Opera and classical music more broadly to share their passions. We are a
-      social society. But we also provide a platform for young directors and
-      producers to make new and exciting forms of Opera and singers a chance to
-      perform. If you're interested in performing or producing an Opera please
-      come to any of our socials or get into contact with us.
-    </p>
-    <p>
-      For people that want to put on their own production go to the
-      <a href="#putting_on_a_show">Putting on a show</a> section to find out
-      more.
-    </p>
-
+    <div class="center">
+      <p>
+        At heart we are a place for people with a common love and appreciation for
+        Opera and classical music more broadly to share their passions. We are a
+        social society. But we also provide a platform for young directors and
+        producers to make new and exciting forms of Opera and singers a chance to
+        perform. If you're interested in performing or producing an Opera please
+        come to any of our socials or get into contact with us.
+      </p>
+      <p>
+        For people that want to put on their own production go to the
+        <a href="#putting_on_a_show">Putting on a show</a> section to find out
+        more.
+      </p>
     </div>
-    </div>
+  </div>
+  <!-- ============== -->
 
-    <br>
 
-    <div class="w3-center w3-padding-48 w3-white">
 
+  <!-- WHAT DO WE STAND FOR -->
+  <div class="page-box">
     <h3>What do we stand for? (i.e. society constitution)</h3>
-
-    <div class="w3-container center">
-
-    <p>
-      We want to share our passion and love for Opera and bring together like
-      minded people. We want to make Opera accessible and introduce to new a
-      different people. Please see our
-      <a href="./opWaRenewedConstitution.pdf">Constitution</a> for more
-      details...
-    </p>
-
+    <div class="center">
+      <p>
+        We want to share our passion and love for Opera and bring together like
+        minded people. We want to make Opera accessible and introduce to new a
+        different people. Please see our
+        <a href="./opWaRenewedConstitution.pdf">Constitution</a> for more
+        details...
+      </p>
     </div>
-    </div>
+  </div>
+  <!-- ==================== -->
 
-    <br>
 
-    <div class="w3-center w3-padding-48 w3-white">
 
+  <!-- WHERE CAN YOU FIND US? -->
+  <div class="page-box">
     <h3>Where can you find us?</h3>
-
-    <div class="w3-container center">
-
-    <ul>
-      <li>
-        Email us at <a href="mailto:su301@warwicksu.com">su301@warwicksu.com</a>
-      </li>
-      <li>
-        <a
+    <div class="center">
+      <ul>
+        <li>
+          Email us at <a href="mailto:su301@warwicksu.com">su301@warwicksu.com</a>
+        </li>
+        <li>
+          <a
           href="https://www.warwicksu.com/societies-sports/societies/operawarwick/"
           >Warwick Student Union website</a
-        >
-      </li>
-      <li><a href="https://www.facebook.com/operawarwick">Facebook</a></li>
-      <li>
-        <a href="https://www.youtube.com/channel/UCrWmnc1-5iJxZZXjgaX-IgQ"
+          >
+        </li>
+        <li><a href="https://www.facebook.com/operawarwick">Facebook</a></li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCrWmnc1-5iJxZZXjgaX-IgQ"
           >YouTube</a
-        >
-      </li>
-    </ul>
-    <p>Here's what we've been up to...</p>
-    <iframe
+          >
+        </li>
+      </ul>
+      <p>Here's what we've been up to...</p>
+      <iframe
       class="horizontal-center"
       src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Foperawarwick%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
       width="500"
@@ -171,49 +156,44 @@
       style="border: none; overflow: hidden"
       allowFullScreen
       allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-    ></iframe>
-
+      ></iframe>
     </div>
-    </div>
+  </div>
+  <!-- ====================== -->
 
-    <br>
 
-    <div class="w3-center w3-padding-48 w3-white">
 
+  <!-- EVENTS -->
+  <div class="page-box">
     <!--
-      Don't touch this section. Add events in the <script> section at the
-      bottom of the page.
-    -->
-    <h2 id="events">Events (what - when - where)</h2>
-
-    <div class="w3-container center">
-
+    Don't touch this section. Add events in the <script> section at the
+    bottom of the page.
+  -->
+  <h2 id="events">Events (what - when - where)</h2>
+  <div class="center">
     <h3>Regular events</h3>
     <ul id="regular-events"></ul>
     <h3>Spontaneous events</h3>
     <iframe
-      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Foperawarwick%2F&tabs=events&width=340&height=184&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId"
-      width="340"
-      height="184"
-      style="border: none; overflow: hidden"
-      allowFullScreen
-      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Foperawarwick%2F&tabs=events&width=340&height=184&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId"
+    width="340"
+    height="184"
+    style="border: none; overflow: hidden"
+    allowFullScreen
+    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
     ></iframe>
-
-    <!-- uncomment following line for bullet point list of spontaneous events: -->
+    <!-- uncomment the following line for a bullet point list of spontaneous events: -->
     <!-- <ul id="spontaneous-events"></ul> -->
+  </div>
+</div>
+<!-- ====== -->
 
-    </div>
-    </div>
 
-    <br>
 
-    <div class="w3-center w3-padding-48 w3-white">
-
-    <h2 id="putting_on_a_show">Putting on a show</h2>
-
-    <div class="w3-container center">
-
+<!-- PUTTING ON A SHOW -->
+<div class="page-box">
+  <h2 id="putting_on_a_show">Putting on a show</h2>
+  <div class="center">
     <p>
       Would you like to direct or produce our next performance? Here is the
       <a href="./opWaSubmissionsPolicy.pdf">Submissions policy</a>. The policy
@@ -222,17 +202,15 @@
       portofolios and push the boundaries of new and exciting Opera. So don't
       hesitate and give it a go! We'll help along the way :)
     </p>
+  </div>
+</div>
+<!-- ================= -->
 
-    </div></div>
 
-    <br>
-
-    <div class="w3-center w3-padding-48 w3-white">
-
-    <h2>OpWa friends 😊</h2>
-
-    <div class="w3-container center">
-
+<!-- OPWA FRIENDS -->
+<div class="page-box">
+  <h2>OpWa friends 😊</h2>
+  <div class="center">
     <p>
       Opera society members are active participants in the musical community of
       the University of Warwick. You can find members as part of Warwick Chamber
@@ -240,27 +218,25 @@
       Musical theatre and many others... Wherever you are, there'll be a
       friendly OpWa face.
     </p>
+  </div>
+</div>
+<!-- ============ -->
 
-    </div></div>
 
-    <br>
 
-    <div class="w3-center w3-padding-48 w3-white">
-
-    <h2 id="contribute">Contribute</h2>
-
-    <div class="w3-container center">
-
+<!-- CONTRIBUTE -->
+<div class="page-box">
+  <h2 id="contribute">Contribute</h2>
+  <div class="center">
     <p>
       This is an open-source website produced under the
       <a href="./LICENSE">MIT Licence</a>, any and all contributions are welcome
       and you can contribute by going to the
       <a href="https://github.com/OperaWarwick/OperaWarwick.github.io"
-        >Opera Warwick Website Github repository</a
+      >Opera Warwick Website Github repository</a
       >
       repository.
     </p>
-
     <hr />
     <p>
       The current maintainer is <i>Alexandre Shinebourne</i>. If you have any
@@ -271,115 +247,117 @@
       Last modified on
       <span id="last-modified" style="font-weight: bold"></span>.
     </p>
-
-    </div></div>
-
-    <br>
-
   </div>
+</div>
+<!-- ========== -->
+</div>
 
-  <script>
-    "use strict";
 
-    // ADD NEW REGULAR EVENTS HERE!
-    // Here is where you can add regular events to the page, use the following
-    // format:
-    // {
-    //   what: '<EVENT TITLE>',
-    //   when: '<EVENT DATE & TIME>',
-    //   where: '<EVENT LOCATION>'
-    // },
-    const regularEvents = [
-      {
-        what: "Tutti (casual social singing)",
-        when: "Every two weeks on Sunday",
-        where: "Ensemble Room (Arts Centre, Ground floor)",
-      },
-    ];
 
-    // ADD NEW SPONTANEOUS EVENTS HERE!
-    // Here is where you can add spontaneous events to the page, use the
-    // following format:
-    // {
-    //   what: '<EVENT TITLE>',
-    //   when: '<EVENT DATE & TIME>',
-    //   where: '<EVENT LOCATION>'
-    // }
-    const spontaneousEvents = [
-      // { what: '<EVENT TITLE>', when: '<EVENT DATE & TIME>', where: '<EVENT LOCATION>' },
-      {
-        what: "Welcome Week event (please book on the SU events page)",
-        when: "Wed 29 Sep 2021 14:00",
-        where: "Ensemble Room (Arts Centre, Ground floor)",
-      },
-      {
-        what: "Societies Fair",
-        when: "Welcome week",
-        where: "Societies Fair",
-      },
-      {
-        what: "Societies Fair",
-        when: "Welcome week",
-        where: "Societies Fair",
-      },
-    ];
 
-    // Don't touch this stuff (it's what renders the events)
-    function appendEvents(templateId) {
-      const regularEventList = document.getElementById("regular-events");
-      const spontaneousEventList = document.getElementById("spontaneous-events");
-      const fragment = document.getElementById(templateId);
+<!-- JAVASCRIPT -->
+<script>
+"use strict";
 
-      // Loop over the books and modify the given template
-      regularEvents.forEach((event) => {
-        // Create an instance of the template content
-        const instance = document.importNode(fragment.content, true);
-        // Add relevant content to the template
-        instance.querySelector(".what").innerHTML = event.what;
-        instance.querySelector(".when").innerHTML = event.when;
-        instance.querySelector(".where").innerHTML = event.where;
-        // Append the instance ot the DOM
-        regularEventList.appendChild(instance);
-      });
+// ADD NEW REGULAR EVENTS HERE!
+// Here is where you can add regular events to the page, use the following
+// format:
+// {
+//   what: '<EVENT TITLE>',
+//   when: '<EVENT DATE & TIME>',
+//   where: '<EVENT LOCATION>'
+// },
+const regularEvents = [
+  {
+    what: "Tutti (casual social singing)",
+    when: "Every two weeks on Sunday",
+    where: "Ensemble Room (Arts Centre, Ground floor)",
+  },
+];
 
-      // Loop over the books and modify the given template
-      spontaneousEvents.forEach((event) => {
-        // Create an instance of the template content
-        const instance = document.importNode(fragment.content, true);
-        // Add relevant content to the template
-        instance.querySelector(".what").innerHTML = event.what;
-        instance.querySelector(".when").innerHTML = event.when;
-        instance.querySelector(".where").innerHTML = event.where;
-        // Append the instance ot the DOM
-        spontaneousEventList.appendChild(instance);
-      });
-    }
+// ADD NEW SPONTANEOUS EVENTS HERE!
+// Here is where you can add spontaneous events to the page, use the
+// following format:
+// {
+//   what: '<EVENT TITLE>',
+//   when: '<EVENT DATE & TIME>',
+//   where: '<EVENT LOCATION>'
+// }
+const spontaneousEvents = [
+  // { what: '<EVENT TITLE>', when: '<EVENT DATE & TIME>', where: '<EVENT LOCATION>' },
+  {
+    what: "Welcome Week event (please book on the SU events page)",
+    when: "Wed 29 Sep 2021 14:00",
+    where: "Ensemble Room (Arts Centre, Ground floor)",
+  },
+  {
+    what: "Societies Fair",
+    when: "Welcome week",
+    where: "Societies Fair",
+  },
+  {
+    what: "Societies Fair",
+    when: "Welcome week",
+    where: "Societies Fair",
+  },
+];
 
-    appendEvents("event-template");
+// Don't touch this stuff (it's what renders the events)
+function appendEvents(templateId) {
+  const regularEventList = document.getElementById("regular-events");
+  const spontaneousEventList = document.getElementById("spontaneous-events");
+  const fragment = document.getElementById(templateId);
 
-    // Don't touch this stuff (it's what adds the last modified date)
-    function setModifiedDate() {
-      if (document.getElementById("last-modified")) {
-        fetch(
-          "https://api.github.com/repos/WarwickFolk/WarwickFolk.github.io/commits"
-        )
-          .then((response) => {
-            return response.json();
-          })
-          .then((commits) => {
-            var modified = commits[0]["commit"]["committer"]["date"].slice(
-              0,
-              10
-            );
-            if (modified != "{{ page.date | date: '%Y-%m-%d' }}") {
-              document.getElementById("last-modified").textContent = modified;
-            }
-          });
+  // Loop over the books and modify the given template
+  regularEvents.forEach((event) => {
+    // Create an instance of the template content
+    const instance = document.importNode(fragment.content, true);
+    // Add relevant content to the template
+    instance.querySelector(".what").innerHTML = event.what;
+    instance.querySelector(".when").innerHTML = event.when;
+    instance.querySelector(".where").innerHTML = event.where;
+    // Append the instance ot the DOM
+    regularEventList.appendChild(instance);
+  });
+
+  // Loop over the books and modify the given template
+  spontaneousEvents.forEach((event) => {
+    // Create an instance of the template content
+    const instance = document.importNode(fragment.content, true);
+    // Add relevant content to the template
+    instance.querySelector(".what").innerHTML = event.what;
+    instance.querySelector(".when").innerHTML = event.when;
+    instance.querySelector(".where").innerHTML = event.where;
+    // Append the instance ot the DOM
+    spontaneousEventList.appendChild(instance);
+  });
+}
+
+appendEvents("event-template");
+
+// Don't touch this stuff (it's what adds the last modified date)
+function setModifiedDate() {
+  if (document.getElementById("last-modified")) {
+    fetch(
+      "https://api.github.com/repos/WarwickFolk/WarwickFolk.github.io/commits"
+    )
+    .then((response) => {
+      return response.json();
+    })
+    .then((commits) => {
+      var modified = commits[0]["commit"]["committer"]["date"].slice(
+        0,
+        10
+      );
+      if (modified != "{{ page.date | date: '%Y-%m-%d' }}") {
+        document.getElementById("last-modified").textContent = modified;
       }
-    }
+    });
+  }
+}
 
-    setModifiedDate();
-  </script>
+setModifiedDate();
+</script>
 
-  </body>
+</body>
 </html>
