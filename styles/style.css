@@ -1,6 +1,6 @@
 body {
-  margin: 20px auto;
-  line-height: 1;
+  margin: 0;
+  padding: 0;
   /* font-family: 'Roboto', sans-serif; */
 }
 
@@ -42,7 +42,7 @@ body {
   margin-top:16px;
   margin-bottom:16px;
   padding:0.01em 16px;
-  padding-top:48px;
+  padding-top:20px;
   padding-bottom:48px;
   padding-left:28px;
   padding-right:28px;
@@ -72,4 +72,5 @@ body {
   border:none;
   display:block;
   outline:0;
+  margin:0;
 }
