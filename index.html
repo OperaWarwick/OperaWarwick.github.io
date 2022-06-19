@@ -7,16 +7,38 @@
     <title>Opera Warwick</title>
     <link rel="icon" href="./images/opWaLogo.png" />
     <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- https://www.w3schools.com/w3css/w3css_templates.asp -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+    <style>
+    h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+    body {font-family: "Open Sans"}
+    </style>
   </head>
-  <body>
-    <!-- 
+  <body class="w3-light-grey">
+
+  <div class="w3-bar w3-black w3-hide-small">
+  <a href="https://www.facebook.com/operawarwick" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.instagram.com/operawarwick/?hl=en" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.youtube.com/channel/UCrWmnc1-5iJxZZXjgaX-IgQ" class="w3-bar-item w3-button"><i class="fa fa-youtube"></i></a>
+  <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a> -->
+  <a href="https://twitter.com/operawarwick" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a> -->
+  <!-- <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a> -->
+  </div>
+
+    <!--
       Template formating for an event on the website.
       Use this every time you mention or describe a new event.
-      Add events in the script at the bottom of the page so that they are 
-      formated correctly and appear in the right place automatically.  
+      Add events in the script at the bottom of the page so that they are
+      formated correctly and appear in the right place automatically.
     -->
     <template id="event-template">
       <li>
@@ -26,9 +48,19 @@
     </template>
 
     <!-- MAIN CONTENT -->
-    <h1>University of Warwick Opera Society (aka. OpWa)</h1>
+    <div class="w3-content">
 
+    <br>
+
+    <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>University of Warwick Opera Society (aka. OpWa)</b></h1>
+    </header>
+
+    <br>
+
+    <div class="w3-center w3-padding-48 w3-white">
     <h2>Welcome to Opera Warwick</h2>
+    <div class="w3-container center">
     <p>
       Hi there, welcome to the University of Warwick opera society webpage! Here
       you'll be able to learn about the society, keep track of our social media
@@ -38,22 +70,37 @@
       also just come an meet us at any of our socials (these will be advertised
       here as well as on Facebook)
     </p>
+    </div>
+    </div>
+
+    <br>
+
+    <div class="w3-center w3-padding-48 w3-white">
+
     <h3>Who are we?</h3>
+
+    <div class="w3-container">
     <p>
       What better means of presenting to you "who we are" than to show us in
       action...
     </p>
     <iframe
-      class="horizontal-center"
-      width="90%"
-      height="315"
+      class="horizontal-center styled-iframe"
       src="https://www.youtube.com/embed/THntSZDyk7I"
       title="YouTube video player"
-      frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
+      allowFullScreen
     ></iframe>
+    </div>
+    </div>
+
+    <br>
+
+    <div class="w3-center w3-padding-48 w3-white">
     <h3>What we do?</h3>
+
+    <div class="w3-container center">
+
     <p>
       At heart we are a place for people with a common love and appreciation for
       Opera and classical music more broadly to share their passions. We are a
@@ -67,7 +114,18 @@
       <a href="#putting_on_a_show">Putting on a show</a> section to find out
       more.
     </p>
+
+    </div>
+    </div>
+
+    <br>
+
+    <div class="w3-center w3-padding-48 w3-white">
+
     <h3>What do we stand for? (i.e. society constitution)</h3>
+
+    <div class="w3-container center">
+
     <p>
       We want to share our passion and love for Opera and bring together like
       minded people. We want to make Opera accessible and introduce to new a
@@ -75,7 +133,18 @@
       <a href="./opWaRenewedConstitution.pdf">Constitution</a> for more
       details...
     </p>
+
+    </div>
+    </div>
+
+    <br>
+
+    <div class="w3-center w3-padding-48 w3-white">
+
     <h3>Where can you find us?</h3>
+
+    <div class="w3-container center">
+
     <ul>
       <li>
         Email us at <a href="mailto:su301@warwicksu.com">su301@warwicksu.com</a>
@@ -100,17 +169,25 @@
       width="500"
       height="500"
       style="border: none; overflow: hidden"
-      scrolling="no"
-      frameborder="0"
-      allowfullscreen="true"
+      allowFullScreen
       allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
     ></iframe>
 
-    <!-- 
-      Don't touch this section. Add events in the <script> section at the 
+    </div>
+    </div>
+
+    <br>
+
+    <div class="w3-center w3-padding-48 w3-white">
+
+    <!--
+      Don't touch this section. Add events in the <script> section at the
       bottom of the page.
     -->
     <h2 id="events">Events (what - when - where)</h2>
+
+    <div class="w3-container center">
+
     <h3>Regular events</h3>
     <ul id="regular-events"></ul>
     <h3>Spontaneous events</h3>
@@ -119,13 +196,24 @@
       width="340"
       height="184"
       style="border: none; overflow: hidden"
-      scrolling="no"
-      frameborder="0"
-      allowfullscreen="true"
+      allowFullScreen
       allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
     ></iframe>
 
+    <!-- uncomment following line for bullet point list of spontaneous events: -->
+    <!-- <ul id="spontaneous-events"></ul> -->
+
+    </div>
+    </div>
+
+    <br>
+
+    <div class="w3-center w3-padding-48 w3-white">
+
     <h2 id="putting_on_a_show">Putting on a show</h2>
+
+    <div class="w3-container center">
+
     <p>
       Would you like to direct or produce our next performance? Here is the
       <a href="./opWaSubmissionsPolicy.pdf">Submissions policy</a>. The policy
@@ -135,7 +223,16 @@
       hesitate and give it a go! We'll help along the way :)
     </p>
 
+    </div></div>
+
+    <br>
+
+    <div class="w3-center w3-padding-48 w3-white">
+
     <h2>OpWa friends 😊</h2>
+
+    <div class="w3-container center">
+
     <p>
       Opera society members are active participants in the musical community of
       the University of Warwick. You can find members as part of Warwick Chamber
@@ -144,7 +241,16 @@
       friendly OpWa face.
     </p>
 
+    </div></div>
+
+    <br>
+
+    <div class="w3-center w3-padding-48 w3-white">
+
     <h2 id="contribute">Contribute</h2>
+
+    <div class="w3-container center">
+
     <p>
       This is an open-source website produced under the
       <a href="./LICENSE">MIT Licence</a>, any and all contributions are welcome
@@ -165,7 +271,13 @@
       Last modified on
       <span id="last-modified" style="font-weight: bold"></span>.
     </p>
-  </body>
+
+    </div></div>
+
+    <br>
+
+  </div>
+
   <script>
     "use strict";
 
@@ -215,8 +327,7 @@
     // Don't touch this stuff (it's what renders the events)
     function appendEvents(templateId) {
       const regularEventList = document.getElementById("regular-events");
-      const spontaneousEventList =
-        document.getElementById("spontaneous-events");
+      const spontaneousEventList = document.getElementById("spontaneous-events");
       const fragment = document.getElementById(templateId);
 
       // Loop over the books and modify the given template
@@ -269,4 +380,6 @@
 
     setModifiedDate();
   </script>
+
+  </body>
 </html>
