@@ -3,6 +3,15 @@ body {
   padding: 0;
   /* font-family: 'Roboto', sans-serif; */
 }
+a {
+  text-decoration: underline;
+  color:#3d5ee3;
+}
+
+p {
+  text-align: justify;
+  font-family:Segoe UI;
+}
 
 .light-grey-bg {
   color:black;
@@ -24,6 +33,7 @@ body {
 .styled-iframe {
   width: 90%;
   height: 315px;
+  max-width: 600px;
 }
 
 .main-content {
@@ -42,10 +52,10 @@ body {
   margin-top:16px;
   margin-bottom:16px;
   padding:0.01em 16px;
-  padding-top:20px;
-  padding-bottom:20px;
-  padding-left:28px;
-  padding-right:28px;
+  padding-top:25px;
+  padding-bottom:30px;
+  padding-left:30px;
+  padding-right:35px;
   color:black;
   background-color:white;
   display:block;
