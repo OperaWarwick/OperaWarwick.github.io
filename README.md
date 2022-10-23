@@ -6,7 +6,7 @@ This is the repository for the website of the University of Warwick Opera Societ
 
 The website is hosted (for free :sunglasses:) on GitHub pages.
 
-Any changes to the main branch while automatically trigger the website to be updated.
+Any changes to the main branch will automatically trigger the website to be updated.
 
 ## Friendly note to future execs :wave:
 
